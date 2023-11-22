@@ -59,7 +59,7 @@ public class KrEditorTabs extends KrTabsImpl implements KrEditorTabsBase {
 
   @Override
   public boolean useSmallLabels() {
-    return UISettings.getInstance().getUseSmallLabelsOnTabs() && !ExperimentalUI.isNewUI();
+    return UISettings.getInstance().getUseSmallLabelsOnTabs();
   }
 
   @Override

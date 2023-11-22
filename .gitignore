@@ -5,9 +5,10 @@
 /*.zip
 
 # Idea files
-.idea
 out
 target/
-build/
 .gradle
+.idea
+build/*
+!build/libs
 publishToken
