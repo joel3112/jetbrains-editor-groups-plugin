@@ -7,7 +7,6 @@ import com.intellij.openapi.actionSystem.ActionManager;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.util.Key;
 import com.intellij.openapi.wm.IdeFocusManager;
-import com.intellij.ui.ExperimentalUI;
 import krasa.editorGroups.tabs2.KrEditorTabsBase;
 import krasa.editorGroups.tabs2.KrTabsPresentation;
 import org.jetbrains.annotations.NotNull;
@@ -59,7 +58,7 @@ public class KrEditorTabs extends KrTabsImpl implements KrEditorTabsBase {
 
   @Override
   public boolean useSmallLabels() {
-    return UISettings.getInstance().getUseSmallLabelsOnTabs() && !ExperimentalUI.isNewUI();
+    return UISettings.getInstance().getUseSmallLabelsOnTabs();
   }
 
   @Override
