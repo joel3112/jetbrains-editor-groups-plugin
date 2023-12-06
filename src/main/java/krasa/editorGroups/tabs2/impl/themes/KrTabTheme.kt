@@ -26,6 +26,7 @@ interface KrTabTheme {
   val underlinedTabBackground: Color?
   val underlinedTabForeground: Color
   val underlineHeight: Int
+  val tabHeight: Int
 
   val underlineArc: Int
     get() = 0
@@ -43,6 +44,7 @@ open class KrDefaultTabTheme : KrTabTheme {
   override val underlinedTabBackground: Color? get() = JBUI.CurrentTheme.DefaultTabs.underlinedTabBackground()
   override val underlinedTabForeground: Color get() = JBUI.CurrentTheme.DefaultTabs.underlinedTabForeground()
   override val underlineHeight: Int get() = JBUI.CurrentTheme.DefaultTabs.underlineHeight()
+  override val tabHeight: Int get() = JBUI.CurrentTheme.TabbedPane.TAB_HEIGHT.get()
   override val hoverInactiveBackground: Color?
     get() = hoverBackground
   override val underlinedTabInactiveBackground: Color?
@@ -83,6 +85,9 @@ class KrEditorTabTheme : KrTabTheme {
 
   override val underlineHeight: Int
     get() = JBUI.CurrentTheme.EditorTabs.underlineHeight()
+
+  override val tabHeight: Int
+    get() = JBUI.CurrentTheme.TabbedPane.TAB_HEIGHT.get()
 
   override val underlineArc: Int
     get() = JBUI.CurrentTheme.EditorTabs.underlineArc()

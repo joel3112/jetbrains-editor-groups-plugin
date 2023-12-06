@@ -3,6 +3,7 @@ package krasa.editorGroups.tabs2.my;
 import com.intellij.ui.ColorUtil;
 import com.intellij.ui.JBColor;
 import com.intellij.ui.scale.JBUIScale;
+import com.intellij.util.ui.JBUI;
 import com.intellij.util.ui.UIUtil;
 import org.jetbrains.annotations.NotNull;
 
@@ -19,6 +20,10 @@ public class EditorGroupsTabs {
 
   public static int underlineHeight() {
     return getInt("EditorGroupsTabs.underlineHeight", JBUIScale.scale(3));
+  }
+
+  public static int tabHeight() {
+    return getInt("EditorGroupsTabs.tabHeight", JBUI.CurrentTheme.TabbedPane.TAB_HEIGHT.get());
   }
 
   @NotNull

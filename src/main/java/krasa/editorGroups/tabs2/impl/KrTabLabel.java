@@ -256,7 +256,7 @@ public class KrTabLabel extends JPanel implements Accessible, DataProvider {
     }
 
     if (!ApplicationConfiguration.state().isCompactTabs()) {
-      size.height = JBUI.CurrentTheme.TabbedPane.TAB_HEIGHT.get();
+      size.height = myTabs.getTabPainter().getTabTheme().getTabHeight();
     }
     return size;
   }
