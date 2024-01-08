@@ -12,7 +12,6 @@ open class EditorGroupsTabTheme : KrTabTheme {
   override val underlinedTabBackground: Color? get() = EditorGroupsTabs.underlinedTabBackground()
   override val underlinedTabForeground: Color get() = EditorGroupsTabs.underlinedTabForeground()
   override val underlineHeight: Int get() = EditorGroupsTabs.underlineHeight()
-  override val tabHeight: Int get() = EditorGroupsTabs.tabHeight()
   override val hoverInactiveBackground: Color?
     get() = hoverBackground
   override val underlinedTabInactiveBackground: Color?

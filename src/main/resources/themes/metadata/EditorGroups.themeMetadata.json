@@ -3,9 +3,6 @@
   "fixed": false,
   "ui": [
     {
-      "key": "EditorGroupsTabs.tabHeight"
-    },
-    {
       "key": "EditorGroupsTabs.background"
     },
     {

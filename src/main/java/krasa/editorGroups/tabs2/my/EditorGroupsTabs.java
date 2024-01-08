@@ -22,10 +22,6 @@ public class EditorGroupsTabs {
     return getInt("EditorGroupsTabs.underlineHeight", JBUIScale.scale(3));
   }
 
-  public static int tabHeight() {
-    return getInt("EditorGroupsTabs.tabHeight", JBUI.CurrentTheme.TabbedPane.TAB_HEIGHT.get());
-  }
-
   @NotNull
   public static Color inactiveUnderlineColor() {
     return JBColor.namedColor("EditorGroupsTabs.inactiveUnderlineColor", new JBColor(0x9ca7b8, 0x747a80));
