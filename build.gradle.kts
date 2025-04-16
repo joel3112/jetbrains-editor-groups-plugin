@@ -32,7 +32,7 @@ tasks {
   patchPluginXml {
     version.set(properties("pluginVersion").get())
     sinceBuild.set(properties("pluginSinceBuild").get())
-    untilBuild.set(properties("pluginUntilBuild").get())
+    untilBuild.set(provider { null })
 
 //    val changelog = project.changelog // local variable for configuration cache compatibility
 //    // Get the latest available change notes from the changelog file
